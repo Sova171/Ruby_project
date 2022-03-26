@@ -40,7 +40,7 @@ class Tree
   end
 
   def delete_leaf(key, node = @root)
-    #delete 1 leaf or branch with one branch
+    #delete 1 leaf or branch with one leaf
 
     if !node.left.nil? && key == node.left.data
       return node.left.left.nil? ? node.left = node.left.right : node.left = node.left.left
